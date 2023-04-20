@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sentiment Recommender System</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/css/main.css" />
+		<link rel="stylesheet" href="static/css/mystyle.css" />
+		<noscript><link rel="stylesheet" href="static/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen  ">
+						<div class="content">
+							<h1 id="blackheading">Amazon Recommender System</h1>
+							<form action="{{ url_for('predict')}}" method="POST">
+								  <div class="form-group">
+									  <label for="comment">Check Reviews here</label>
+									  <textarea  class="form-control" id="query1" name="query1" rows="1" cols="5" autofocus placeholder="Enter Review">{{query1}}</textarea>
+								  </div>
+								  <div class="col-sm-3">
+									  </br>
+									  <button type="submit" class="btn btn-primary" name="submit">SUBMIT</button>
+								  </div>
+								  <div class="form-group">
+									  </br>
+								      <textarea class="form-control" rows="1" cols="5" id="comment" name="query2" rows="1" cols="5" >{{output1}}</textarea>
+								  </div>
+							</form>
+							<ul class="actions stacked">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Check How it is Built</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="/static/images/Amazon.jpg" alt="" />
+						</div>
+					</section>
+
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Untitled. Design: <a href="">Final Project</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
